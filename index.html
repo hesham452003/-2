@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مسابقة إسلامية</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- شاشة البداية -->
+    <div id="start-screen" class="screen">
+      <h1>مرحبًا بكم في المسابقة الإسلامية!</h1>
+      <button id="start-button" onclick="startNewQuiz()">ابدأ اللعبة</button>
+    </div>
+
+    <!-- حاوية المسابقة -->
+    <div id="quiz-container" class="screen" style="display: none;">
+      <!-- شريط التقدم -->
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <!-- المؤقت -->
+      <div id="timer">30</div>
+      <!-- السؤال -->
+      <h1 id="question"></h1>
+      <!-- خيارات الإجابة -->
+      <div id="options"></div>
+    </div>
+
+    <!-- شاشة النتائج -->
+    <div id="result-screen" class="screen" style="display: none;"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
